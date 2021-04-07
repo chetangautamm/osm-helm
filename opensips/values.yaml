@@ -1,0 +1,22 @@
+replicaCount: 1
+
+image:
+  repository: chetangautamm/repo:Opensips_Build
+  pullPolicy: "Always"
+
+container:
+  name: opensips
+  command: "/bin/bash"
+  command1: "-c"
+  command2: "--" 
+  args: "while true; do sleep 10; done;" 
+
+node: "node3"
+
+port: 5060
+
+metadataApp: opensips
+
+selectorApp: opensips
+
+templateApp: opensips

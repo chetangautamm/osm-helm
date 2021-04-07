@@ -1,0 +1,24 @@
+replicaCount: 1
+
+image:
+  repository: chetangautamm/repo:sipp.v3
+  pullPolicy: "Always"
+
+container:
+  name: uas
+  command: "/bin/bash"
+  command1: "-c"
+  command2: "--"
+  args: "while true; do sleep 10; done;"
+
+node: "node3"
+
+port: 5060
+
+metadataApp: uas
+
+selectorApp: uas
+
+templateApp: uas
+
+
