@@ -22,4 +22,4 @@ spec:
         - containerPort: {{ .Values.port }}
         command: [ {{ .Values.container.command | quote }}, {{ .Values.container.command1 | quote }}, {{ .Values.container.command2 | quote }} ]
         args: [ {{ .Values.container.args | quote }} ]
-      nodeName: {{ .Values.node }}      
+           
